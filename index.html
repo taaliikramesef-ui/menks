@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savilmen Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/fev-icom.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<header class="top-header">
+
+    <div class="country-select">
+    <div class="country-btn" id="countryBtn">
+        <span id="selectedCountry">
+            🇲🇦 MAROC <small>MAD</small>
+        </span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
+    <div class="country-dropdown" id="countryDropdown">
+        <input type="text" id="countrySearch" placeholder="Rechercher un pays...">
+
+        <div class="country-list" id="countryList"></div>
+    </div>
+</div>
+
+    <h1 class="logo">MenSavil</h1>
+
+    <div class="right">
+        <i class="fa-solid fa-magnifying-glass" id="openSearch"></i>
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+<div class="search-bar" id="searchBar">
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Rechercher un produit..."
+  >
+  <i class="fa-solid fa-xmark" id="closeSearch"></i>
+</div>
+
+</header>
+
+<nav class="menu">
+    <a href="index.html" class="active">ACCUEIL</a>
+    <a href="produit.html">PRODUITS</a>
+    <a href="tutoriels.html">TUTORIELS</a>
+    <a href="abonnement.html">GÉRER L’ABONNEMENT</a>
+    <a href="dons.html">DONS</a>
+    <a href="contact.html">CONTACTEZ-NOUS</a>
+</nav>
+<body>
+    <section class="hero-slider">
+
+    <!-- Navigation bars -->
+    <div class="slider-nav">
+        <span class="bar active" onclick="showSlide(0)"></span>
+        <span class="bar" onclick="showSlide(1)"></span>
+    </div>
+
+    <!-- Slide 1 -->
+    <div class="slide active" style="background-image:url('body.jpeg');">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Best-Sellers</h1>
+         <p>Essentiels de toilettage masculin haut de gamme — <br>
+        dignes de confiance par plus de 100 000 hommes</b>.</p>
+            <a href="#" class="btn">ENSEMBLES DE MAGASINS</a>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image:url('img1.jpeg');">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Soins &<br>Barbe <br>Premium</h1>
+            <p>Des produits naturels pour un style élégant et moderne.</p>
+            <a href="#" class="btn">DÉCOUVRIR</a>
+        </div>
+    </div>
+
+</section>
+<section class="featured">
+    <h2>Featured in</h3>
+
+    <div class="logos">
+        <div class="forbes">FORBES</div>
+        <div class="usatoday">USA<br>TODAY</div>
+    </div>
+</section>
+<div class="hero">
+
+  <div class="slider">
+    <img src="pack.jpg" class="product-slide s1">
+    <img src="champo.png" class="product-slide s2">
+    <img src="apres-champo.png" class="product-slide s3">
+    <img src="huile.png" class="product-slide s4">
+  </div>
+
+    <a href="#" class="product-btn">VOIR LE PRODUIT</a>
+
+</div>n
+
+<section class="products-section">
+
+    <h2 class="products-title">NOS PRODUITS</h2>
+
+    <div class="products-grid">
+
+       <!-- Product 1 -->
+<div class="product-card">
+    <img src="champo.png" alt="">
+    <h3>Natural Shampoo</h3>
+    <p>Cleanses and strengthens the hair</p>
+    <span class="price">149 MAD</span>
+</div>
+
+<!-- Product 2 -->
+<div class="product-card">
+    <img src="apres-champo.png" alt="">
+    <h3>Conditioner</h3>
+    <p>Hydration and shine</p>
+    <span class="price">129 MAD</span>
+</div>
+
+<!-- Product 3 -->
+<div class="product-card">
+    <img src="huile.png" alt="">
+    <h3>Beard Oil</h3>
+    <p>Softens and perfumes</p>
+    <span class="price">99 MAD</span>
+</div>
+
+<!-- Product 4 -->
+<div class="product-card">
+    <img src="spryt.png" alt="">
+    <h3>Beard Spray</h3>
+    <p>Softens and perfumes</p>
+    <span class="price">99 MAD</span>
+</div>
+
+<!-- Product 5 -->
+<div class="product-card">
+    <img src="creme.png" alt="Hair Cream">
+    <h3>Hair Cream</h3>
+    <p>Nourishes and styles naturally</p>
+    <span class="price">149 MAD</span>
+</div>
+<!-- Product 6 -->
+<div class="product-card">
+    <img src="gel.jpg" alt="Hair Cream">
+    <h3>Hair gel</h3>
+    <p>Nourishes and styles naturally</p>
+    <span class="price">149 MAD</span>
+</div>
+    </div>
+
+</section>
+<!-- View All Button -->
+<div class="view-all-container">
+    <button class="view-all-btn">View All</button>
+</div>
+
+</body>
+<div class="bottom-fixed-bar">
+
+  <div class="bottom-left">
+    © 2026, Menscrafted. All rights reserved.
+  </div>
+
+  <div class="bottom-center">
+    🌍 Morocco (MAD د.م)
+  </div>
+
+  <div class="bottom-right">
+    <img src="https://img.icons8.com/color/48/amex.png">
+    <img src="https://img.icons8.com/color/48/discover.png">
+    <img src="https://img.icons8.com/color/48/jcb.png">
+    <img src="https://img.icons8.com/color/48/mastercard.png">
+    <img src="https://img.icons8.com/color/48/visa.png">
+    <img src="https://img.icons8.com/color/48/paypal.png">
+    <img src="https://img.icons8.com/color/48/unionpay.png">
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

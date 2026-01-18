@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savilmen Page</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="shortcut icon" href="images/fev-icom.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="country-select">
+    <div class="country-btn" id="countryBtn">
+        <span id="selectedCountry">
+            🇲🇦 MAROC <small>MAD</small>
+        </span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
+    <div class="country-dropdown" id="countryDropdown">
+        <input type="text" id="countrySearch" placeholder="Rechercher un pays...">
+
+        <div class="country-list" id="countryList"></div>
+    </div>
+</div>
+
+    <h1 class="logo">MenSavil</h1>
+
+    <div class="right">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+</header>
+
+<nav class="menu">
+    <a href="index.html">ACCUEIL</a>
+    <a href="produit.html">PRODUITS</a>
+    <a href="tutoriels.html">TUTORIELS</a>
+    <a href="abonnement.html">GÉRER L’ABONNEMENT</a>
+    <a href="dons.html">DONS</a>
+    <a href="contact.html" class="active">CONTACTEZ-NOUS</a>
+</nav>
+
+    <section class="hero-slider">
+
+    <!-- Navigation bars -->
+    <div class="slider-nav">
+        <span class="bar active" onclick="showSlide(0)"></span>
+        <span class="bar" onclick="showSlide(1)"></span>
+    </div>
+    </section>
+    <section class="hero">
+    <div class="overlay"></div>
+
+    <div class="slide active" style="background-image:url('ks.jpeg');">
+        <div class="overlay"></div>
+        <div class="content">
+        <h1>Contact Us</h1>
+        <p>
+            We're here to help! Whether you have a question,
+            feedback, or just want to say hello,
+            we'd love to hear from you.
+        </p>
+        <button>Send Message</button>
+    </div>
+    </div>
+</section>
+<section class="contact-section">
+    <div class="contact-container">
+
+        <!-- LEFT FORM -->
+        <div class="contact-form">
+            <h2>Get in touch</h2>
+
+            <form id="contactForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone number">
+                <textarea placeholder="Comment"></textarea>
+
+                <button type="submit">SEND MESSAGE</button>
+
+                <p class="captcha">
+                    This site is protected by hCaptcha and the
+                    <a href="#">Privacy Policy</a> and
+                    <a href="#">Terms of Service</a> apply.
+                </p>
+            </form>
+        </div>
+
+        <!-- RIGHT INFO -->
+        <div class="contact-info">
+            <div class="info-block">
+                <h4>Email Us</h4>
+                <p>savil@outlouk.com</p>
+            </div>
+
+            <div class="info-block">
+                <h4>Call Us</h4>
+                <p>0600000000</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="contactus.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savilmen Page</title>
+    <link rel="stylesheet" href="produit.css">
+    <link rel="shortcut icon" href="images/fev-icom.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+<header class="top-header">
+
+    <div class="country-select">
+    <div class="country-btn" id="countryBtn">
+        <span id="selectedCountry">
+            🇲🇦 MAROC <small>MAD</small>
+        </span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
+    <div class="country-dropdown" id="countryDropdown">
+        <input type="text" id="countrySearch" placeholder="Rechercher un pays...">
+
+        <div class="country-list" id="countryList"></div>
+    </div>
+</div>
+
+    <h1 class="logo">MenSavil</h1>
+
+    <div class="right">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+</header>
+
+<nav class="menu">
+    <a href="index.html">ACCUEIL</a>
+    <a href="produit.html" class="active">PRODUITS</a>
+    <a href="tutoriels.html">TUTORIELS</a>
+    <a href="abonnement.html">GÉRER L’ABONNEMENT</a>
+    <a href="dons.html">DONS</a>
+    <a href="contact.html">CONTACTEZ-NOUS</a>
+</nav>
+
+    <section class="hero-slider">
+
+    <!-- Navigation bars -->
+    <div class="slider-nav">
+        <span class="bar active" onclick="showSlide(0)"></span>
+        <span class="bar" onclick="showSlide(1)"></span>
+    </div>
+    </section>
+    <div class="container">
+
+<header class="top">
+  <h1>Best Sellers</h1>
+  <p>100% Money Back Guarantee, if our products do not make you look better!</p>
+</header>
+
+<div class="shop">
+
+  <!-- PRODUCTS -->
+  <section class="content">
+
+    <div class="toolbar">
+      <span>22 products</span>
+      <select>
+        <option>SORT BY</option>
+        <option>Best sellers</option>
+        <option>Price: low to high</option>
+        <option>Price: high to low</option>
+      </select>
+    </div>
+
+    <div class="products">
+      
+      <a href="creme.html" class="product-link">
+      <div class="card">
+        <span class="badge">#1 Trending</span>
+        <img src="creme.png">
+        <h4>KS Hair Cream - Fixation Forte & Fini Naturel (100ml)</h4>
+        <p class="muted"></p>
+        <span class="price">237 dh</span>
+      </div>
+      </a>
+
+      <a href="shampo.html" class="product-link">
+      <div class="card">
+        <img src="champo.png">
+        <h4>KS Shampoing Fortifiant - Force & Vitalité (400ml)</h4>
+        <span class="old">265 dh</span>
+        <span class="new">170 dh</span>
+      </div>
+      </a>
+
+      <a href="apres-shampo.html" class="product-link">
+      <div class="card">
+        <img src="apres-champo.png">
+        <h4>KS Hair Shampoo - Protection & Hydratation Intense (250ml)</h4>
+        <span class="old">284 dh</span>
+        <span class="new">142 dh</span>
+      </div>
+      </a>
+
+     <a href="huil.html" class="product-link">
+  <div class="card">
+    <img src="huile.png" alt="KS Hair & Beard Oil">
+    <h4>KS Hair & Beard Oil - Hydrating Formula (30ml)</h4>
+    <span class="price">199 MAD</span>
+  </div>
+</a>
+      <a href="spray.html" class="product-link">  
+      <div class="card">
+        <img src="spryt.png">
+        <h4>KS Hair Growth Spray - Formule Stimulante (100ml)</h4>
+        <span class="price">199 dh</span>
+      </div>
+    </div>
+    </a>
+
+  </section>
+</div>
+    </div>
+</body>
+</html>
